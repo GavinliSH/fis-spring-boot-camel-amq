@@ -1,0 +1,15 @@
+---
+apiVersion: "v1"
+kind: "List"
+items:
+- apiVersion: "v1"
+  kind: "ImageStream"
+  metadata:
+    name: "fis-spring-boot-camel-amq"
+  spec:
+    tags:
+    - from:
+        kind: "ImageStreamImage"
+        name: "fis-spring-boot-camel-amq@sha256:c788158c722045ff90aa0b6b191b24dbd1f4364a968f9320aa211782203ed488"
+        namespace: "devops-lxg"
+      name: "latest"
